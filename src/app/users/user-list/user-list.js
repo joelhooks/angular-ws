@@ -1,5 +1,6 @@
 angular.module('githubDashboard.users.user-list', [
-  'ui.router'
+  'ui.router',
+  'githubDashboard.services.user-service'
 ])
   .config(function($stateProvider) {
     $stateProvider
@@ -9,11 +10,11 @@ angular.module('githubDashboard.users.user-list', [
         controller: 'UserListCtrl as userList'
       })
   })
-  .controller('UserListCtrl', function UserListCtrl($http) {
+  .controller('UserListCtrl', function UserListCtrl(userService) {
     var userList = this;
 
-    $http.get('/api/users').then(function (results) {
-      userList.users = results.data;
+    userService.getUsers().then(function (users) {
+      userList.users = users;
     })
   })
 ;
