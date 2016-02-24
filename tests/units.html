@@ -9,18 +9,18 @@
     <h1>Unit Test Results</h1>
     <table cellspacing="0" cellpadding="0" border="0">
       <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; PPC Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34">Browser: PhantomJS 1.9.8 (Mac OS X 0.0.0)</td>
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1">Browser: PhantomJS 2.1.1 (Mac OS X 0.0.0)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 12/2/2015, 4:05:27 PM</td>
+        <td colspan="3">Timestamp: 2/23/2016, 4:17:52 PM</td>
       </tr>
       <tr>
         <td colspan="3">
-          12 tests / 
+          13 tests / 
           0 errors / 
           0 failures / 
           8 skipped / 
-          runtime: 0.019s
+          runtime: 0.046s
         </td>
       </tr>
       <tr class="header">
@@ -30,23 +30,28 @@
       </tr>
       <tr class="pass">
         <td>Passed in 0.006s</td>
-        <td>should create an instance</td>
-        <td>UserList</td>
+        <td>should create a user list instance</td>
+        <td>user-list</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.003s</td>
+        <td>should call the getUsers method on userService</td>
+        <td>user-list</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.001s</td>
-        <td>should call getUsers on the userModel</td>
-        <td>UserList</td>
+        <td>should set the users when results are returned</td>
+        <td>user-list</td>
       </tr>
       <tr class="pass">
-        <td>Passed in 0.008s</td>
-        <td>should create an instance</td>
-        <td>UserModel</td>
+        <td>Passed in 0.032s</td>
+        <td>should create an instance of userService</td>
+        <td>user-service</td>
       </tr>
       <tr class="pass">
         <td>Passed in 0.004s</td>
-        <td>should load the users when getUsers is called</td>
-        <td>UserModel</td>
+        <td>should load the users</td>
+        <td>user-service</td>
       </tr>
       <tr class="skip">
         <td>Skipped</td>
