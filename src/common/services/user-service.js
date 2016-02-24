@@ -6,6 +6,12 @@ angular.module('githubDashboard.services.user-service', [])
       return $http.get('/api/users').then(function (results) {
         return results.data;
       })
+    };
+
+    userService.getUser = function(username) {
+      return $http.get('/api/users/' + username).then(function(results) {
+        return results.data;
+      })
     }
   })
 ;
